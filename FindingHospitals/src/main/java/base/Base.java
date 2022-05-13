@@ -3,18 +3,23 @@ package base;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,50 +32,89 @@ import utils.ExtentReportManager;
 
 public class Base {
 	public static WebDriver driver;
+	public static RemoteWebDriver driver1;
 	public static Properties prop;
 	public static WebDriverWait wait;
 	public ExtentReports report = ExtentReportManager.getReportInstance();
 	public ExtentTest logger;
 
-	// To call different browsers
-        public void invokeBrowser() {
-		prop = new Properties();
+	// To call different browsers using Webdriver
+//	public void invokeBrowser() {
+//		prop = new Properties();
+//
+//		try {
+//			prop.load(new FileInputStream("src/main/java/Config/config.properties"));
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//
+//		// To Open Chrome Browser
+//		if (prop.getProperty("browserName").matches("chrome")) {
+//			System.setProperty("webdriver.chrome.driver",
+//					System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+//			driver = new ChromeDriver();
+//		}
+//
+//		// To Open Mozilla Browser
+//		if (prop.getProperty("browserName").matches("mozilla")) {
+//			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
+//			driver = new FirefoxDriver();
+//		}
+//
+//		// To Open Edge Browser
+//		if (prop.getProperty("browserName").matches("edge")) {
+//			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\Drivers\\msedgedriver.exe");
+//			driver = new EdgeDriver();
+//		}
+//
+//		// To maximize the Browser Window
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//
+//	}
 
+	// To call different browsers using Selenium Grid
+	
+	public void invokeBrowser() throws MalformedURLException {
+		prop = new Properties();
+		String nodeURL = "http://192.168.56.1:4444/wd/hub";
+		
 		try {
 			prop.load(new FileInputStream("src/main/java/Config/config.properties"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 		// To Open Chrome Browser
 		if (prop.getProperty("browserName").matches("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
-			driver = new ChromeDriver();
+			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			capabilities.setBrowserName("chrome");
+			capabilities.setPlatform(Platform.WIN10);
+			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
+
 		}
-		
 		// To Open Mozilla Browser
 		if (prop.getProperty("browserName").matches("mozilla")) {
-			System.setProperty("webdriver.gecko.driver",
-					System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
-			driver = new FirefoxDriver();
-		}
+			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+			capabilities.setBrowserName("firefox");
+			capabilities.setPlatform(Platform.WIN10);
+			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
 
+		}
 		// To Open Edge Browser
 		if (prop.getProperty("browserName").matches("edge")) {
-			System.setProperty("webdriver.edge.driver",
-					System.getProperty("user.dir") + "\\Drivers\\msedgedriver.exe");
-			driver = new EdgeDriver();
+			DesiredCapabilities capabilities = DesiredCapabilities.edge();
+			capabilities.setBrowserName("edge");
+			capabilities.setPlatform(Platform.WIN10);
+			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
 		}
-
+		
 		// To maximize the Browser Window
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-
 	}
-        
-	
+
 	// To open the Main Page URL
 	public void openURL(String websiteURLKey) {
 		driver.get(prop.getProperty(websiteURLKey));
@@ -135,7 +179,7 @@ public class Base {
 	// To close the Browser
 	public void closeBrowser() {
 		driver.quit();
-		
+
 	}
 
 }

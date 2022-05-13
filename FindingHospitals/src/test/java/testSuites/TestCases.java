@@ -1,6 +1,7 @@
 package testSuites;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -21,7 +22,12 @@ public class TestCases extends Base {
 	public void invokeBrowser() {
 		logger = report.createTest("Executing Test Cases");
         
-		hn.invokeBrowser();
+		try {
+			hn.invokeBrowser();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		reportPass("Browser is Invoked");
 	}
 

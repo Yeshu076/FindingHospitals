@@ -1,5 +1,7 @@
 package testSuites;
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -16,7 +18,12 @@ public class SmokeTesting extends Base {
 
 	@BeforeTest
 	public void invokeBrowser() {
-		hn.invokeBrowser();
+		try {
+			hn.invokeBrowser();
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// hn.openURL("websiteURLKey");
 	}
 

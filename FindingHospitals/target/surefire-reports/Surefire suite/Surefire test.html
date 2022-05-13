@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 13 11:13:20 IST 2022</td>
+<td>Started on:</td><td>Fri May 13 17:56:53 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>115 seconds (115528 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2613 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,290 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testSuites.TestCases.invokeBrowser()'><b>invokeBrowser</b><br>Test class: testSuites.TestCases</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: No matching capabilities found
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:54:15.039Z&apos;
+System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: unknown
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0122B8F3+2406643]
+	Ordinal0 [0x011BAF31+1945393]
+	Ordinal0 [0x010AC748+837448]
+	Ordinal0 [0x010F8378+1147768]
+	Ordinal0 [0x010F79C9+1145289]
+	Ordinal0 [0x010F8CF5+1150197]
+	Ordinal0 [0x010F8B3A+1149754]
+	Ordinal0 [0x010F4096+1130646]
+	Ordinal0 [0x010CE636+976438]
+	Ordinal0 [0x010CF546+980294]
+	GetHandleVerifier [0x01499612+2498066]
+	GetHandleVerifier [0x0148C920+2445600]
+	GetHandleVerifier [0x012C4F2A+579370]
+	GetHandleVerifier [0x012C3D36+574774]
+	Ordinal0 [0x011C1C0B+1973259]
+	Ordinal0 [0x011C6688+1992328]
+	Ordinal0 [0x011C6775+1992565]
+	Ordinal0 [0x011CF8D1+2029777]
+	BaseThreadInitThunk [0x76B96739+25]
+	RtlGetFullPathName_UEx [0x77A78E7F+1215]
+	RtlGetFullPathName_UEx [0x77A78E4D+1165]
+
+Command duration or timeout: 2.07 seconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at base.Base.invokeBrowser(Base.java:93)
+	at testSuites.TestCases.invokeBrowser(TestCases.java:26)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:111)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: No matching capabilities found
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:54:15.039Z&apos;
+System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: unknown
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0122B8F3+2406643]
+	Ordinal0 [0x011BAF31+1945393]
+	Ordinal0 [0x010AC748+837448]
+	Ordinal0 [0x010F8378+1147768]
+	Ordinal0 [0x010F79C9+1145289]
+	Ordinal0 [0x010F8CF5+1150197]
+	Ordinal0 [0x010F8B3A+1149754]
+	Ordinal0 [0x010F4096+1130646]
+	Ordinal0 [0x010CE636+976438]
+	Ordinal0 [0x010CF546+980294]
+	GetHandleVerifier [0x01499612+2498066]
+	GetHandleVerifier [0x0148C920+2445600]
+	GetHandleVerifier [0x012C4F2A+579370]
+	GetHandleVerifier [0x012C3D36+574774]
+	Ordinal0 [0x011C1C0B+1973259]
+	Ordinal0 [0x011C6688+1992328]
+	Ordinal0 [0x011C6775+1992565]
+	Ordinal0 [0x011CF8D1+2029777]
+	BaseThreadInitThunk [0x76B96739+25]
+	RtlGetFullPathName_UEx [0x77A78E7F+1215]
+	RtlGetFullPathName_UEx [0x77A78E4D+1165]
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.server.ServicedSession$Factory.apply(ServicedSession.java:185)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$createSession$16(ActiveSessionFactory.java:171)
+	at java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.createSession(ActiveSessionFactory.java:171)
+	at org.openqa.selenium.remote.server.BeginSession.execute(BeginSession.java:67)
+	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.lang.Thread.run(Thread.java:831)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1733022752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1733022752'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: No matching capabilities found
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:54:15.039Z&apos;
+System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: unknown
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0122B8F3+2406643]
+	Ordinal0 [0x011BAF31+1945393]
+	Ordinal0 [0x010AC748+837448]
+	Ordinal0 [0x010F8378+1147768]
+	Ordinal0 [0x010F79C9+1145289]
+	Ordinal0 [0x010F8CF5+1150197]
+	Ordinal0 [0x010F8B3A+1149754]
+	Ordinal0 [0x010F4096+1130646]
+	Ordinal0 [0x010CE636+976438]
+	Ordinal0 [0x010CF546+980294]
+	GetHandleVerifier [0x01499612+2498066]
+	GetHandleVerifier [0x0148C920+2445600]
+	GetHandleVerifier [0x012C4F2A+579370]
+	GetHandleVerifier [0x012C3D36+574774]
+	Ordinal0 [0x011C1C0B+1973259]
+	Ordinal0 [0x011C6688+1992328]
+	Ordinal0 [0x011C6775+1992565]
+	Ordinal0 [0x011CF8D1+2029777]
+	BaseThreadInitThunk [0x76B96739+25]
+	RtlGetFullPathName_UEx [0x77A78E7F+1215]
+	RtlGetFullPathName_UEx [0x77A78E4D+1165]
+
+Command duration or timeout: 2.07 seconds
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at base.Base.invokeBrowser(Base.java:93)
+	at testSuites.TestCases.invokeBrowser(TestCases.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:111)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+Caused by: org.openqa.selenium.SessionNotCreatedException: session not created: No matching capabilities found
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:54:15.039Z&apos;
+System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: unknown
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0122B8F3+2406643]
+	Ordinal0 [0x011BAF31+1945393]
+	Ordinal0 [0x010AC748+837448]
+	Ordinal0 [0x010F8378+1147768]
+	Ordinal0 [0x010F79C9+1145289]
+	Ordinal0 [0x010F8CF5+1150197]
+	Ordinal0 [0x010F8B3A+1149754]
+	Ordinal0 [0x010F4096+1130646]
+	Ordinal0 [0x010CE636+976438]
+	Ordinal0 [0x010CF546+980294]
+	GetHandleVerifier [0x01499612+2498066]
+	GetHandleVerifier [0x0148C920+2445600]
+	GetHandleVerifier [0x012C4F2A+579370]
+	GetHandleVerifier [0x012C3D36+574774]
+	Ordinal0 [0x011C1C0B+1973259]
+	Ordinal0 [0x011C6688+1992328]
+	Ordinal0 [0x011C6775+1992565]
+	Ordinal0 [0x011CF8D1+2029777]
+	BaseThreadInitThunk [0x76B96739+25]
+	RtlGetFullPathName_UEx [0x77A78E7F+1215]
+	RtlGetFullPathName_UEx [0x77A78E4D+1165]
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: unknown
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+	at org.openqa.selenium.remote.server.ServicedSession$Factory.apply(ServicedSession.java:185)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$createSession$16(ActiveSessionFactory.java:171)
+	at java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.createSession(ActiveSessionFactory.java:171)
+	at org.openqa.selenium.remote.server.BeginSession.execute(BeginSession.java:67)
+	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testSuites.TestCases.closeBrowser()'><b>closeBrowser</b><br>Test class: testSuites.TestCases</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -77,17 +359,17 @@ function toggleAllBoxes() {
 <tr>
 <td title='testSuites.TestCases.TopCities()'><b>TopCities</b><br>Test class: testSuites.TestCases</td>
 <td></td>
-<td>8</td>
+<td>0</td>
 <td>testSuites.TestCases@c267ef4</td></tr>
 <tr>
 <td title='testSuites.TestCases.corporateWellness()'><b>corporateWellness</b><br>Test class: testSuites.TestCases</td>
 <td></td>
-<td>30</td>
+<td>0</td>
 <td>testSuites.TestCases@c267ef4</td></tr>
 <tr>
 <td title='testSuites.TestCases.hospitalNames()'><b>hospitalNames</b><br>Test class: testSuites.TestCases</td>
 <td></td>
-<td>73</td>
+<td>0</td>
 <td>testSuites.TestCases@c267ef4</td></tr>
 </table><p>
 </body>
