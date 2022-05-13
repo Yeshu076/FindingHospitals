@@ -1,6 +1,6 @@
-pages\CorporateWellness.class
-utils\DateUtils.class
 utils\ExtentReportManager.class
 pages\TopCities.class
 base\Base.class
+pages\CorporateWellness.class
 pages\HospitalNames.class
+utils\DateUtils.class

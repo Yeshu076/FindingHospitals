@@ -10,7 +10,7 @@ public class ExtentReportManager {
 	public static ExtentReports getReportInstance() {
 
 		if (report == null) {
-			String reportName = DateUtils.getTimeStamp() + ".html";
+			String reportName = "Extent_" + DateUtils.getTimeStamp() + ".html";
 			ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(
 					System.getProperty("user.dir") + "/Reports/" + reportName);
 			report = new ExtentReports();
