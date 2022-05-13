@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="testSuites.SmokeTesting">
+        <methods>
+          <include name="testing"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- testSuites.SmokeTesting -->
+      <class name="testSuites.TestCases">
+        <methods>
+          <include name="hospitalNames"/>
+          <include name="TopCities"/>
+          <include name="corporateWellness"/>
+        </methods>
+      </class> <!-- testSuites.TestCases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
