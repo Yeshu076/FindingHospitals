@@ -18,13 +18,14 @@ public class SmokeTesting extends Base {
 
 	@BeforeTest
 	public void invokeBrowser() {
-		try {
-			hn.invokeBrowser();
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		// hn.openURL("websiteURLKey");
+		hn.invokeBrowser();
+//		try {
+//			hn.invokeBrowser();
+//		} catch (MalformedURLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
 	}
 
 	@Test

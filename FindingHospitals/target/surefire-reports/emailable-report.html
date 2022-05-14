@@ -31,145 +31,85 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">0</td><td class="numi">2.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">124.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">testSuites.TestCases</td><td><a href="#m1"><b>invokeBrowser</b>  </a></td><td class="numi">1</td><td>1652444813010</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">testSuites.TestCases</td><td><a href="#m2"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1652444815622</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Surefire test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="3">testSuites.TestCases</td><td><a href="#m3"><b>hospitalNames</b>  </a></td><td class="numi">1</td><td>1652444815618</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m4"><b>TopCities</b>  </a></td><td class="numi">1</td><td>1652444815620</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m5"><b>corporateWellness</b>  </a></td><td class="numi">1</td><td>1652444815620</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">testSuites.TestCases</td><td><a href="#m1"><b>invalidcorporateWellness</b>  </a></td><td class="numi">1</td><td>1652544347044</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">testSuites.TestCases</td><td><a href="#m2"><b>hospitalNames</b>  </a></td><td class="numi">1</td><td>1652544226536</td><td class="numi">113777</td></tr><tr class="passedodd"><td><a href="#m3"><b>TopCities</b>  </a></td><td class="numi">1</td><td>1652544340313</td><td class="numi">6013</td></tr>
 </table>
 <h1>Surefire test</h1>
-<h2 id="m1">testSuites.TestCases:invokeBrowser</h2>
+<h2 id="m1">testSuites.TestCases:invalidcorporateWellness</h2>
 <div style="padding-left:3em">
-<p>session not created: No matching capabilities found
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:54:15.039Z&apos;
-System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0122B8F3+2406643]
-	Ordinal0 [0x011BAF31+1945393]
-	Ordinal0 [0x010AC748+837448]
-	Ordinal0 [0x010F8378+1147768]
-	Ordinal0 [0x010F79C9+1145289]
-	Ordinal0 [0x010F8CF5+1150197]
-	Ordinal0 [0x010F8B3A+1149754]
-	Ordinal0 [0x010F4096+1130646]
-	Ordinal0 [0x010CE636+976438]
-	Ordinal0 [0x010CF546+980294]
-	GetHandleVerifier [0x01499612+2498066]
-	GetHandleVerifier [0x0148C920+2445600]
-	GetHandleVerifier [0x012C4F2A+579370]
-	GetHandleVerifier [0x012C3D36+574774]
-	Ordinal0 [0x011C1C0B+1973259]
-	Ordinal0 [0x011C6688+1992328]
-	Ordinal0 [0x011C6775+1992565]
-	Ordinal0 [0x011CF8D1+2029777]
-	BaseThreadInitThunk [0x76B96739+25]
-	RtlGetFullPathName_UEx [0x77A78E7F+1215]
-	RtlGetFullPathName_UEx [0x77A78E4D+1165]
-
-Command duration or timeout: 2.07 seconds</p>
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
-<br/>at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-<br/>at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-<br/>at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-<br/>at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-<br/>at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-<br/>at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-<br/>at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-<br/>at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-<br/>at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-<br/>at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-<br/>at base.Base.invokeBrowser(Base.java:93)
-<br/>at testSuites.TestCases.invokeBrowser(TestCases.java:26)
-<br/>28 lines not shown
-<p>Caused by session not created: No matching capabilities found
-Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:54:15.039Z&apos;
-System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown
-remote stacktrace: Backtrace:
-	Ordinal0 [0x0122B8F3+2406643]
-	Ordinal0 [0x011BAF31+1945393]
-	Ordinal0 [0x010AC748+837448]
-	Ordinal0 [0x010F8378+1147768]
-	Ordinal0 [0x010F79C9+1145289]
-	Ordinal0 [0x010F8CF5+1150197]
-	Ordinal0 [0x010F8B3A+1149754]
-	Ordinal0 [0x010F4096+1130646]
-	Ordinal0 [0x010CE636+976438]
-	Ordinal0 [0x010CF546+980294]
-	GetHandleVerifier [0x01499612+2498066]
-	GetHandleVerifier [0x0148C920+2445600]
-	GetHandleVerifier [0x012C4F2A+579370]
-	GetHandleVerifier [0x012C3D36+574774]
-	Ordinal0 [0x011C1C0B+1973259]
-	Ordinal0 [0x011C6688+1992328]
-	Ordinal0 [0x011C6775+1992565]
-	Ordinal0 [0x011CF8D1+2029777]
-	BaseThreadInitThunk [0x76B96739+25]
-	RtlGetFullPathName_UEx [0x77A78E7F+1215]
-	RtlGetFullPathName_UEx [0x77A78E4D+1165]
-
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-VO07NQ3&apos;, ip: &apos;10.252.0.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: driver.version: unknown</p>
-jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-<br/>at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
-<br/>at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-<br/>at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-<br/>at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-<br/>at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-<br/>at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-<br/>at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-<br/>at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-<br/>at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-<br/>at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
-<br/>at org.openqa.selenium.remote.server.ServicedSession$Factory.apply(ServicedSession.java:185)
-<br/>at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$createSession$16(ActiveSessionFactory.java:171)
-<br/>at java.util.Optional.map(Optional.java:260)
-<br/>at org.openqa.selenium.remote.server.ActiveSessionFactory.createSession(ActiveSessionFactory.java:171)
-<br/>at org.openqa.selenium.remote.server.BeginSession.execute(BeginSession.java:67)
-<br/>at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:231)
-<br/>at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-<br/>at java.util.concurrent.FutureTask.run(FutureTask.java:264)
-<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-<br/>at java.lang.Thread.run(Thread.java:831)
+<p>java.lang.NullPointerException</p>
+org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:111)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+<br/>1 lines not shown
+<p>Caused by null</p>
+utils.XLUtility.getRowCount(XLUtility.java:36)
+<br/>at testSuites.TestCases.getData(TestCases.java:68)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:111)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 <br/>1 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">testSuites.TestCases:closeBrowser</h2>
+<h2 id="m2">testSuites.TestCases:hospitalNames</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">testSuites.TestCases:TopCities</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">testSuites.TestCases:hospitalNames</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">testSuites.TestCases:corporateWellness</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -1,10 +1,11 @@
 {
-  "cover": "InputDetails",
-  "Data": [
-    {
-      "id": "1",
-      "Location": "Banglore",
-      "Search": "Hospital"
-    }
-  ]
+	"cover": "InputDetails",
+	"Data": [
+		{
+			"id": "1",
+			"Location": "Banglore",
+			"Search": "Hospital"
+		}
+	]
 }
+    

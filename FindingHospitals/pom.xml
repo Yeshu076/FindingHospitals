@@ -5,9 +5,9 @@
 	<artifactId>FindingHospitals</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-     <maven.compiler.source>1.8</maven.compiler.source>
-     <maven.compiler.target>1.8</maven.compiler.target>
-</properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -20,10 +20,10 @@
 			<version>3.141.59</version>
 		</dependency>
 		<dependency>
-  			<groupId>org.testng</groupId>
-  			<artifactId>testng</artifactId>
- 			<version>6.8</version>
-  			<scope>test</scope>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.aventstack</groupId>
@@ -55,22 +55,16 @@
 
 	</dependencies>
 	<build>
-	<plugins>
-    
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M6</version>
-        <configuration>
-          <systemPropertyVariables>
-            <browser>${browser}</browser>
-          </systemPropertyVariables>
-        </configuration>
-        
-        
-        
-      </plugin>
-   
-</plugins>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M6</version>
+
+
+			</plugin>
+
+		</plugins>
 	</build>
 </project>

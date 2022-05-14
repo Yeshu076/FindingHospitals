@@ -39,81 +39,81 @@ public class Base {
 	public ExtentTest logger;
 
 	// To call different browsers using Webdriver
-//	public void invokeBrowser() {
-//		prop = new Properties();
-//
-//		try {
-//			prop.load(new FileInputStream("src/main/java/Config/config.properties"));
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//
-//		// To Open Chrome Browser
-//		if (prop.getProperty("browserName").matches("chrome")) {
-//			System.setProperty("webdriver.chrome.driver",
-//					System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
-//			driver = new ChromeDriver();
-//		}
-//
-//		// To Open Mozilla Browser
-//		if (prop.getProperty("browserName").matches("mozilla")) {
-//			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
-//			driver = new FirefoxDriver();
-//		}
-//
-//		// To Open Edge Browser
-//		if (prop.getProperty("browserName").matches("edge")) {
-//			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\Drivers\\msedgedriver.exe");
-//			driver = new EdgeDriver();
-//		}
-//
-//		// To maximize the Browser Window
-//		driver.manage().window().maximize();
-//		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-//		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-//
-//	}
-
-	// To call different browsers using Selenium Grid
-	
-	public void invokeBrowser() throws MalformedURLException {
+	public void invokeBrowser() {
 		prop = new Properties();
-		String nodeURL = "http://192.168.56.1:4444/wd/hub";
-		
+
 		try {
 			prop.load(new FileInputStream("src/main/java/Config/config.properties"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 		// To Open Chrome Browser
 		if (prop.getProperty("browserName").matches("chrome")) {
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			capabilities.setBrowserName("chrome");
-			capabilities.setPlatform(Platform.WIN10);
-			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
-
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe");
+			driver = new ChromeDriver();
 		}
+
 		// To Open Mozilla Browser
 		if (prop.getProperty("browserName").matches("mozilla")) {
-			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-			capabilities.setBrowserName("firefox");
-			capabilities.setPlatform(Platform.WIN10);
-			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
-
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\Drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
 		}
+
 		// To Open Edge Browser
 		if (prop.getProperty("browserName").matches("edge")) {
-			DesiredCapabilities capabilities = DesiredCapabilities.edge();
-			capabilities.setBrowserName("edge");
-			capabilities.setPlatform(Platform.WIN10);
-			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
+			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\Drivers\\msedgedriver.exe");
+			driver = new EdgeDriver();
 		}
-		
+
 		// To maximize the Browser Window
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
 	}
+
+	// To call different browsers using Selenium Grid
+	
+//	public void invokeBrowser() throws MalformedURLException {
+//		prop = new Properties();
+//		String nodeURL = "http://192.168.56.1:4444/wd/hub";
+//		
+//		try {
+//			prop.load(new FileInputStream("src/main/java/Config/config.properties"));
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		// To Open Chrome Browser
+//		if (prop.getProperty("browserName").matches("chrome")) {
+//			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//			capabilities.setBrowserName("chrome");
+//			capabilities.setPlatform(Platform.WIN10);
+//			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
+//
+//		}
+//		// To Open Mozilla Browser
+//		if (prop.getProperty("browserName").matches("mozilla")) {
+//			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+//			capabilities.setBrowserName("firefox");
+//			capabilities.setPlatform(Platform.WIN10);
+//			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
+//
+//		}
+//		// To Open Edge Browser
+//		if (prop.getProperty("browserName").matches("edge")) {
+//			DesiredCapabilities capabilities = DesiredCapabilities.edge();
+//			capabilities.setBrowserName("edge");
+//			capabilities.setPlatform(Platform.WIN10);
+//			driver1 = new RemoteWebDriver(new URL(nodeURL), capabilities);
+//		}
+//		
+//		// To maximize the Browser Window
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//	}
 
 	// To open the Main Page URL
 	public void openURL(String websiteURLKey) {
