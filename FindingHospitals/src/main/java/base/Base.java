@@ -176,6 +176,12 @@ public class Base {
 		report.flush();
 	}
 
+	//TO close the Tab
+	public void closeTab() {
+		driver.close();
+	}
+	
+	
 	// To close the Browser
 	public void closeBrowser() {
 		driver.quit();
