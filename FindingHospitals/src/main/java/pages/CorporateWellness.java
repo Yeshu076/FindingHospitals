@@ -4,14 +4,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import base.Base;
 
@@ -30,22 +28,21 @@ public class CorporateWellness extends Base {
 	@SuppressWarnings("resource")
 	public void invalidformFill() throws InterruptedException, IOException {
 
-		logger = report.createTest("Invalid Corporate Wellness");
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		logger = report.createTest("Corporate Wellness");
 
 		// Initializing the Excel Sheet
 		FileInputStream fs = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/TestData.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fs);
 		XSSFSheet sheet = workbook.getSheet("Data");
-		
 
 		// Selecting the corporate option
 		try {
 			findElement(providers).click();
+			// findElement(corporate).click();
 			reportPass("Corporate Wellness Link Clicked Successfully");
 		} catch (Exception e) {
 			reportFail(e.getMessage());
-		}	
+		}
 
 		// Switching to new tab
 		try {
@@ -58,7 +55,10 @@ public class CorporateWellness extends Base {
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
-
+        
+		System.out.println("*****************************************");
+		System.out.println("            Button Enabled Check:         ");
+		System.out.println("*****************************************");
 		// Filling the form
 		try {
 			Name = driver.findElement(name);
@@ -71,43 +71,30 @@ public class CorporateWellness extends Base {
 			Contact.sendKeys("" + (long) sheet.getRow(1).getCell(3).getNumericCellValue());
 			Email.sendKeys(sheet.getRow(1).getCell(2).getStringCellValue());
 			
-//			Name.sendKeys(sheet.getRow(3).getCell(0).getStringCellValue());
-//			OrgName.sendKeys(sheet.getRow(3).getCell(1).getStringCellValue());
-//			Contact.sendKeys("" + (long) sheet.getRow(3).getCell(3).getNumericCellValue());
-//			Email.sendKeys(sheet.getRow(3).getCell(2).getStringCellValue());
+//			Name.sendKeys(sheet.getRow(2).getCell(0).getStringCellValue());
+//			OrgName.sendKeys(sheet.getRow(2).getCell(1).getStringCellValue());
+//			Contact.sendKeys("" + (long) sheet.getRow(2).getCell(3).getNumericCellValue());
+//			Email.sendKeys(sheet.getRow(2).getCell(2).getStringCellValue());
 
 			driver.findElement(organizationSize).click();
 			driver.findElement(dropDown).click();
-			Screenshot("dataEntered");
-
-			System.out.println("*****************************************");
-			System.out.println("   Schedule a demo button verification   ");
-			System.out.println("*****************************************");
 			
-			boolean result = driver.findElement(button).isEnabled();
-			
-			if(result) {
-				reportFail("Schedule a demo button is activated");
-				System.out.println("Schedule a demo button is activated");
-				takeScreenShotOnFailure();
+			if(driver.findElement(button).isEnabled()) {
+				driver.findElement(button).click();
+				reportFail("Data entered successfully");
+				System.out.println("Data entered successfully");
 			}
 			else {
 				reportPass("Schedule a demo button is not activated due to filling invalid details");
 				System.out.println("Schedule a demo button is not activated due to filling invalid details");
 			}
-				
-			
-			Thread.sleep(2000);
 
+            Screenshot("dataEntered");
 
 		} catch (Exception e) {
 			reportFail(e.getMessage());
 		}
-		
 	}
-			
-	
-
 
 	
 

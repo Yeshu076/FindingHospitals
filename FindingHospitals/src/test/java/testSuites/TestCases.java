@@ -13,10 +13,12 @@ import pages.HospitalNames;
 import pages.TopCities;
 
 
+
 public class TestCases extends Base {
 	HospitalNames hn = new HospitalNames();
 	TopCities tc = new TopCities();
 	CorporateWellness ca = new CorporateWellness();
+
 
 	@BeforeTest
 	public void invokeBrowser() {
@@ -55,6 +57,9 @@ public class TestCases extends Base {
 		ca.invalidformFill();
 		reportPass("Schedule a demo button is Checked");
 	}
+	
+	
+	
 
 	@AfterTest
 	public void closeBrowser() {

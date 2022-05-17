@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testSuites.TestCases" time="208.677" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="testSuites.TestCases" time="199.028" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Yeshw\AppData\Local\Temp\surefire3886136515990349887\surefirebooter8752633356175651179.jar C:\Users\Yeshw\AppData\Local\Temp\surefire3886136515990349887 2022-05-15T11-39-02_783-jvmRun1 surefire547430052464966651tmp surefire_01609497958645132852tmp"/>
+    <property name="sun.java.command" value="C:\Users\Yeshw\AppData\Local\Temp\surefire4125160326311598428\surefirebooter6902009738002144357.jar C:\Users\Yeshw\AppData\Local\Temp\surefire4125160326311598428 2022-05-17T18-01-13_259-jvmRun1 surefire5221008451403359232tmp surefire_06934959477802239737tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\Yeshw\git\FindingHospitals\FindingHospitals\target\test-classes;C:\Users\Yeshw\git\FindingHospitals\FindingHospitals\target\classes;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Yeshw\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Yeshw\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Yeshw\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Yeshw\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Yeshw\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Yeshw\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Yeshw\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Yeshw\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Yeshw\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Yeshw\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\selenium-server\3.141.59\selenium-server-3.141.59.jar;C:\Users\Yeshw\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Yeshw\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Yeshw\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830\jetty-repacked-9.4.12.v20180830.jar;C:\Users\Yeshw\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\Yeshw\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\Yeshw\.m2\repository\org\testng\testng\6.8\testng-6.8.jar;C:\Users\Yeshw\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Yeshw\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Yeshw\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\Yeshw\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\Yeshw\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Yeshw\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Yeshw\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Yeshw\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Yeshw\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Yeshw\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Yeshw\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Yeshw\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Yeshw\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\Yeshw\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\Yeshw\.m2\repository\commons-io\commons-io\2.10.0\commons-io-2.10.0.jar;C:\Users\Yeshw\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\Yeshw\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Yeshw\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\Yeshw\.m2\repository\org\apache\poi\poi-ooxml\4.0.0\poi-ooxml-4.0.0.jar;C:\Users\Yeshw\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.0\poi-ooxml-schemas-4.0.0.jar;C:\Users\Yeshw\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.1\xmlbeans-3.0.1.jar;C:\Users\Yeshw\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Yeshw\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\Yeshw\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Yeshw"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Yeshw\AppData\Local\Temp\surefire3886136515990349887\surefirebooter8752633356175651179.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Yeshw\AppData\Local\Temp\surefire4125160326311598428\surefirebooter6902009738002144357.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -53,7 +53,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-16.0.1/bin/server;C:/Program Files/Java/jdk-16.0.1/bin;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\Java\jdk1.8.0_301\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\msys64\mingw64\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Java\jdk-11.0.11;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Common Files\AspenTech Shared\;C:\Program Files\Common Files\AspenTech Shared\;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Mingw\MinGW\bin;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\msys64\mingw64;C:\msys64\usr\bin;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Users\Yeshw\Java Jars\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\Java\jdk1.8.0_301\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Yeshw\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2021.2.2\bin;C:\Users\Yeshw\AppData\Local\GitHubDesktop\bin;C:\Program Files\Common Files\AspenTech Shared\;AspenTech\Aspen Hydraulics;C:\msys64\mingw64\bin;C:\msys64\mingw64;C:\Users\Yeshw\AppData\Roaming\npm;C:\msys64\usr\bin;C:\MinGW\bin;C:\Program Files\Java\jdk-11.0.11\bin;C:\Users\Yeshw\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Yeshw\AppData\Local\atom\bin;F:\Softwares Setup\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\Users\Yeshw\Java Jars\apache-maven-3.8.4\bin;C:\Users\Yeshw\AppData\Local\Programs\Hyper\resources\bin;C:\Users\Yeshw\apache-maven-3.8.5\bin;;C:\WINDOWS\System32;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-16.0.1/bin/server;C:/Program Files/Java/jdk-16.0.1/bin;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\Java\jdk1.8.0_301\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\msys64\mingw64\bin;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Java\jdk-11.0.11;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Library\mingw-w64\bin;C:\ProgramData\Anaconda3\Library\usr\bin;C:\ProgramData\Anaconda3\Library\bin;C:\ProgramData\Anaconda3\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Common Files\AspenTech Shared\;C:\Program Files\Common Files\AspenTech Shared\;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Mingw\MinGW\bin;C:\Program Files\MATLAB\R2020a\runtime\win64;C:\Program Files\MATLAB\R2020a\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\msys64\mingw64;C:\msys64\usr\bin;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Users\Yeshw\Java Jars\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\Java\jdk1.8.0_301\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Yeshw\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2021.2.2\bin;C:\Users\Yeshw\AppData\Local\GitHubDesktop\bin;C:\Program Files\Common Files\AspenTech Shared\;AspenTech\Aspen Hydraulics;C:\msys64\mingw64\bin;C:\msys64\mingw64;C:\Users\Yeshw\AppData\Roaming\npm;C:\msys64\usr\bin;C:\MinGW\bin;C:\Program Files\Java\jdk-11.0.11\bin;C:\Users\Yeshw\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Yeshw\AppData\Local\atom\bin;F:\Softwares Setup\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\Users\Yeshw\Java Jars\apache-maven-3.8.4\bin;C:\Users\Yeshw\AppData\Local\Programs\Hyper\resources\bin;C:\Users\Yeshw\apache-maven-3.8.5\bin;;C:\Users\Yeshw\Desktop;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.301-b09"/>
@@ -61,10 +61,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="hospitalNames" classname="testSuites.TestCases" time="177.39">
+  <testcase name="hospitalNames" classname="testSuites.TestCases" time="99.677">
     <system-out><![CDATA[*************************************************************
             Hospitals with ratings > 3.5 :
 *************************************************************
+4.0 - Manipal Hospitals Yeshwanthpur
 4.0 - HOSMAT Hospital
 4.5 - Motherhood Hospital
 4.0 - Koshys Hospital
@@ -91,11 +92,9 @@
 5.0 - Cloudnine Fertility - IVF Centre, HRBR Layout
 5.0 - Motherhood Fertility and IVF - Sarjapur Road
 5.0 - Motherhood Fertility and IVF - Banashankari
-4.0 - Motherhood Fertility and IVF - Electronic City
 5.0 - Aster Women & Children Hospital
 4.5 - Cloudnine Fertility - IVF Centre, Electronic City
 4.0 - Sakra World Hospital
-4.0 - Manipal Hospitals Yeshwanthpur
 4.5 - Greenview Medical Center
 4.0 - Navachethana Hospital
 4.5 - Poornima Hospital
@@ -134,22 +133,23 @@
 4.0 - S J Hospital
 4.5 - HCG - The Specialist in Cancer Care
 5.0 - Family Hospital
-5.0 - Ovum Woman & Child Speciality Hospital
+5.0 - Gayathri Hospital
 4.5 - Sapthagiri Hospital
 4.5 - Maiya Multi Speciality Hospital
-4.5 - City Hospital
-4.0 - Sri Ram Speciality Hospital
-4.5 - Shri Vijayalakshmi Hospital & Trauma Centre
+4.5 - Cura Hospitals
+4.0 - Shri Vijayalakshmi Hospital & Trauma Centre
+4.5 - Eskay Healthcare
+4.0 - Matthew Hospital
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 37253
+    <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 15458
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-May 15, 2022 11:39:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+May 17, 2022 6:01:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="TopCities" classname="testSuites.TestCases" time="9.539">
+  <testcase name="TopCities" classname="testSuites.TestCases" time="20.259">
     <system-out><![CDATA[*****************************************
             Top Cities are: 
 *****************************************
@@ -163,8 +163,17 @@ Pune
 Ahmedabad
 ]]></system-out>
   </testcase>
-  <testcase name="invalidcorporateWellness" classname="testSuites.TestCases" time="17.611">
-    <system-out><![CDATA[Schedule a demo button is not activated due to filling invalid details
+  <testcase name="invalidcorporateWellness" classname="testSuites.TestCases" time="12.749">
+    <system-out><![CDATA[*****************************************
+            Button Enabled Check:         
+*****************************************
+Schedule a demo button is not activated due to filling invalid details
+]]></system-out>
+  </testcase>
+  <testcase name="validcorporateWellness" classname="testSuites.TestCases" time="61.196">
+    <system-out><![CDATA[*****************************************
+            Button Enabled Check:         
+*****************************************
 ]]></system-out>
   </testcase>
 </testsuite>
