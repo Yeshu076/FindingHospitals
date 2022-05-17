@@ -7,9 +7,7 @@
         <methods>
           <include name="hospitalNames"/>
           <include name="invalidcorporateWellness"/>
-          <include name="closeBrowser"/>
           <include name="TopCities"/>
-          <include name="validcorporateWellness"/>
           <include name="invokeBrowser"/>
         </methods>
       </class> <!-- testSuites.TestCases -->
